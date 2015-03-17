@@ -1,0 +1,26 @@
+<h1>Created project
+<%= @project.title %>
+</h1>
+
+<p>
+  <strong>Title:</strong>
+  <%= @project.title %>
+</p>
+ 
+ <p>
+  <strong>Start date:</strong>
+  <%= @project.start_date %>
+</p>
+ 
+ <p>
+  <strong>End date:</strong>
+  <%= @project.end_date %>
+</p> 
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @project.description %>
+</p>
+
+<%= link_to 'Back', projects_path %>
+<%= link_to 'Edit', edit_project_path(@project) %>
